@@ -1,5 +1,5 @@
 import Image from "next/image";
-import map from "@/public/map.png";
+import map from "@/public/Map.png";
 
 export default function GetInTouch() {
   return (
