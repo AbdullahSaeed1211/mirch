@@ -3,7 +3,7 @@ import serviceshero from "@/public/services/serviceshero.png";
 import ServicesCard from "@/components/services/ServicesCard";
 import ProcessWorkflow from "@/components/services/ProcessWorkflow";
 import WorkflowList from "@/components/services/WorkflowList";
-import Footer from "@/components/services/Footer";
+import Footer from "@/components/Footer";
 export default function ServicePage() {
   return (
     <>
