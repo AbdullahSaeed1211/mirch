@@ -1,6 +1,6 @@
-import satisfaction from "@/public/satisfaction.svg";
-import innovation from "@/public/innovation.svg";
-import reliable from "@/public/Reliable.svg";
+import satisfaction from "@/public/home/satisfaction.svg";
+import innovation from "@/public/home/innovation.svg";
+import reliable from "@/public/home/Reliable.svg";
 import Image from "next/image";
 export default function Incredible() {
   return (

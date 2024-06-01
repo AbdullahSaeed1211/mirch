@@ -6,7 +6,7 @@ export default function Expertise() {
 
     <div className="flex flex-col lg:flex-row lg:items-center justify-between text-justify ">
       <div className="lg:w-1/2">
-        <p className="text-[#F96261] leading-[26px] text-[22px] font-poppins font-semibold">
+        <p className="text-mirch-pink leading-[26px] text-[22px] font-poppins font-semibold">
           Expertise Speaks
         </p>
         <h1 className="text-black font-bold text-[40px] leading-[48px]">

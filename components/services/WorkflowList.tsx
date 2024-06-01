@@ -5,6 +5,7 @@ import list4 from "@/public/services/worklist4.svg";
 import list5 from "@/public/services/worklist5.svg";
 import list3v2 from "@/public/services/worklist3v2.svg";
 import Image from "next/image";
+import gadgets from "@/public/services/GADGETs.png"
 
 export default function WorkflowList() {
   const list = [
@@ -46,82 +47,51 @@ export default function WorkflowList() {
   ];
 
   return (
-    <div className="grid lg:grid-cols-2 lg:gap-x-2 ">
+    <div className="grid lg:grid-cols-2 lg:gap-x-2 mt-5 lg:-mt-20">
       <div className="flex flex-col">
-        <div className="flex gap-x-4 items-start">
-          <Image src={list[0].icon} alt="" className="" />
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[0].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[0].description}
-            </p>
+        {list.slice(0, 3).map((item, index) => (
+          <div key={index} className="flex gap-x-4 items-start mb-4">
+            <Image
+              src={item.icon}
+              alt={`${item.title} icon`}
+              width={50} // Set a fixed width
+              height={50} // Set a fixed height
+              className="object-contain"
+            />
+            <div>
+              <h3 className="text-mirch-pink text-[16px] leading-5">
+                {item.title}
+              </h3>
+              <p className="text-[#3B3E41] text-[14px] leading-6">
+                {item.description}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex gap-x-4 items-start">
-          <Image src={list[1].icon} alt="" className="" />
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[1].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[1].description}
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-x-4 items-start">
-          <div className="lg:hidden">
-            <Image src={list3v2} alt="" />
-          </div>
-          <div className="hidden lg:block">
-            <Image src={list[2].icon} alt="" />
-          </div>
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[2].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[2].description}
-            </p>
-          </div>
-        </div>
+        ))}
+        
       </div>
       <div className="flex flex-col justify-end">
-        <div className="hidden lg:flex gap-x-4 items-start">
-          <Image src={list[3].icon} alt="" />
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[3].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[3].description}
-            </p>
+        {list.slice(4, 6).map((item, index) => (
+          <div key={index} className="flex gap-x-4 items-start mb-4">
+            <Image
+              src={item.icon}
+              alt={`${item.title} icon`}
+              width={50} // Set a fixed width
+              height={50} // Set a fixed height
+              className="object-contain"
+            />
+            <div>
+              <h3 className="text-mirch-pink text-[16px] leading-5">
+                {item.title}
+              </h3>
+              <p className="text-[#3B3E41] text-[14px] leading-6">
+                {item.description}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="flex gap-x-4 items-start">
-          <Image src={list[4].icon} alt="" className="" />
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[4].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[4].description}
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-x-4 items-start">
-          <Image src={list[5].icon} alt="" className="" />
-          <div>
-            <h3 className="text-[#f96261] text-[16px] leading-5">
-              {list[5].title}
-            </h3>
-            <p className="text-[#3B3E41] text-[14px] leading-6">
-              {list[5].description}
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
+      <Image src={gadgets} alt='gadgets'  className="lg:hidden"/>
     </div>
   );
 }

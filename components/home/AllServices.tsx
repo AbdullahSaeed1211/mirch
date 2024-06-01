@@ -1,5 +1,5 @@
 import Image from "next/image";
-import star from "@/public/star.svg"
+import star from "@/public/home/star.svg"
 export default function AllServices() {
   return (
     <div className="flex flex-row-reverse lg:flex-row my-20 px-[20px] lg:container lg:px-20 mx-auto ">

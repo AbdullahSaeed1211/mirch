@@ -1,12 +1,20 @@
-import email from "@/public/email.svg";
 import Image from "next/image";
-import aboutimage from "@/public/about-img.svg";
+import email from "@/public/home/email.svg";
+import aboutimage from "@/public/home/about-img.svg";
+const items = [
+  "Innovative Design Solutions",
+  "Strategic Branding Insights",
+  "Advanced SEO Techniques",
+  "Cutting-Edge Web Development",
+  "Social Media Mastery",
+  "Data Driven Analysis",
+];
 export default function About() {
   return (
     <>
       <div className="lg:grid gap-y-2 lg:grid-cols-3 w-full">
         <div className="lg:col-span-2">
-          <p className="text-[#F96261] leading-[26px] text-[22px] font-poppins font-semibold"> 
+          <p className="text-mirch-pink font-normal lg:leading-[26px] lg:text-[22px] font-poppins lg:font-semibold">
             Mirch Media
           </p>
           <h1 className="text-black font-bold text-[29px] leading-[35px] lg:text-[40px] lg:leading-[48px]">
@@ -18,7 +26,7 @@ export default function About() {
             enhance your online presence and connect with your audience like
             never before.
           </p>
-          <div className="grid lg:grid-cols-2 gap-y-2 lg:justify-between lg:items-start mt-2 items-center justify-center ">
+          {/* <div className="grid lg:grid-cols-2 gap-y-2 lg:justify-between lg:items-start mt-2 items-center justify-center ">
             <div className="flex items-center gap-x-5">
               <Image src={email} alt="email logo" />
               <p className="font-lusitana font-normal text-[21px] leading-[32px] text-[#04111D]">
@@ -55,11 +63,26 @@ export default function About() {
                 Data-Driven Analytics
               </p>
             </div>
+          </div> */}
+           <div className="grid sm:grid-cols-2 gap-y-2 sm:items-start mt-2 items-center justify-center w-full">
+            {items.map((item, index) => (
+              <div key={index} className="flex items-center gap-x-2 pr-4 border border-[#4A55A2] rounded-full sm:border-0">
+                <Image src={email} alt="email logo" />
+                <p className="font-lusitana font-normal text-[21px] leading-[32px] text-[#04111D]">
+                  {item}
+                </p>
+              </div>
+            ))}
           </div>
-          <div></div>
         </div>
-        <Image src={aboutimage} alt="about image" className="sm:hidden lg:block"/>
-      </div>
+         
+
+          <Image
+            src={aboutimage}
+            alt="about image"
+            className="sm:hidden lg:block"
+          />
+        </div>
     </>
   );
 }

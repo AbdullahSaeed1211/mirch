@@ -1,10 +1,10 @@
-import mirchlogomain from "@/public/mirchLogoMain.svg";
 import Image from "next/image";
-import { Button } from "./ui/button";
-import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import facebook from "@/public/facebook.svg";
-import insta from "@/public/insta.svg";
+import { Button } from "../ui/button";
+import { Input } from "@/components/ui/input";
+import mirchlogomain from "@/public/mirchLogoMain.svg";
+import insta from "@/public/home/insta.svg";
+import facebook from "@/public/home/facebook.svg";
 const quickLinks = [
   { href: "/", text: "About Us" },
   { href: "/", text: "Meet Our Expertise" },

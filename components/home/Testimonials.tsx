@@ -1,11 +1,11 @@
 import Image from "next/image";
-import grow from "@/public/grow.svg";
-import stars from "@/public/Stars.svg";
+import grow from "@/public/home/grow.svg";
+import stars from "@/public/home/Stars.svg";
 export default function Testimonial() {
   return (
     <div className="mt-10 items-center justify-between text-justify px-[20px] lg:container lg:px-20 mx-auto">
       <div>
-        <p className="text-[#F96261] leading-[26px] text-[22px] font-poppins font-semibold">
+        <p className="text-mirch-pink leading-[26px] text-[22px] font-poppins font-semibold">
           testtimonials
         </p>
         <h1 className="text-black font-bold text-[40px] leading-[48px]">

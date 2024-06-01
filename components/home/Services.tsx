@@ -1,12 +1,12 @@
 import Image from "next/image";
-import image1 from "@/public/image1.png";
-import image2 from "@/public/image2.png";
-import image3 from "@/public/image3.png";
-import image4 from "@/public/image4.png";
+import image1 from "@/public/home/image1.png";
+import image2 from "@/public/home/image2.png";
+import image3 from "@/public/home/image3.png";
+import image4 from "@/public/home/image4.png";
 export default function Services() {
   return (
     <div className="mt-10">
-      <p className="text-[#F96261] lg:leading-[26px] lg:text-[22px] font-poppins font-semibold">
+      <p className="text-mirch-pink lg:leading-[26px] lg:text-[22px] font-poppins font-semibold">
         Services
       </p>
       <div className="flex flex-col lg:flex-row">
@@ -19,18 +19,16 @@ export default function Services() {
           satisfaction across various technology domains.
         </p>
       </div>
-      <div className="grid grid-cols-5 gap-x-2 mt-5 ">
-        <div className="col-span-1">
-          <Image src={image1} alt="" height={406} />
+      <div className="grid grid-cols-5 grid-rows-1 md:justify-between gap-x-1 my-5 w-full">
+          <Image src={image1} alt="" height={406} className="w-full h-full" />
+        <div className="col-span-2 ">
+          <Image src={image2} alt="" height={406} className="w-full h-full" />
         </div>
-        <div className="col-span-2 h-[406px] ">
-          <Image src={image2} alt="" height={406} className="" />
-        </div>
-        <div className="col-span-1">
-          <Image src={image3} alt="" height={406} />
+        <div className="">
+          <Image src={image3} alt="" height={406} className="w-full h-full" />
         </div>
         <div className="col-span-1">
-          <Image src={image4} alt="" height={406} />
+          <Image src={image4} alt="" height={406} className="w-full h-full" />
         </div>
       </div>
     </div>

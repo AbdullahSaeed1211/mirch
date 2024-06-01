@@ -1,10 +1,10 @@
 import Image from "next/image";
-import vector1 from "@/public/circleOrange1.svg";
-import vector2 from "@/public/circleOrange2.svg";
-import vector3 from "@/public/circleOrange3.svg";
+import vector1 from "@/public/home/circleOrange1.svg";
+import vector2 from "@/public/home/circleOrange2.svg";
+import vector3 from "@/public/home/circleOrange3.svg";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
-import heroStar from "@/public/starHero.svg";
+import heroStar from "@/public/home/starHero.svg";
 
 export default function Hero() {
   return (

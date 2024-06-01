@@ -1,12 +1,10 @@
-import email from "@/public/email.svg";
 import Image from "next/image";
-import aboutimage from "@/public/about-img.svg";
-import grow from "@/public/grow.svg";
+import grow from "@/public/home/grow.svg";
 export default function Grow() {
   return (
     <div className="flex flex-col lg:flex-row mt-10 items-center justify-between text-justify">
       <div className="lg:w-1/2" >
-        <p className="text-[#F96261] text-[18px] leading-5 lg:leading-[26px] lg:text-[22px] font-poppins font-semibold">
+        <p className="text-mirch-pink text-[18px] leading-5 lg:leading-[26px] lg:text-[22px] font-poppins font-semibold">
           Grow with Mirch Media
         </p>
         <h1 className="text-black font-bold text-[32px] leading-10 lg:text-[40px] lg:leading-[48px]">

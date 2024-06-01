@@ -1,4 +1,4 @@
-import { Lusitana, Roboto } from "next/font/google"
+import { Lato, Lusitana, Roboto } from "next/font/google"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -8,7 +8,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,6 +20,8 @@ const config = {
     },
     extend: {
       colors: {
+        'mirch-pink': "#F96261",
+        'white': '#FFFFFF',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,14 +64,16 @@ const config = {
         lusitana: ["Lusitana", "serif"],
         Roboto: ["Roboto", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       backgroundImage: {
         herobg: "url('/herobg.png')",
-        nextproject: "url('/nextproject.svg')",
-        footerCurved: "url('/footerCurvedbg.svg')",
-        footerCurved2: "url('/footerCurvedbg.png')",
+        nextproject: "url('/home/nextproject.svg')",
+        nextproject2: "url('/home/nextproject2.svg')",
+        footerCurved: "url('/services/footerCurvedbg.svg')",
+        footerCurved2: "url('/servicesfooterCurvedbg.png')",
       },
-      
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -89,10 +93,13 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontSize :{
+
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), "addVariablesForColors"],
-  
+
 } satisfies Config
 
 export default config

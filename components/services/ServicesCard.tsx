@@ -94,7 +94,7 @@ export default function ServicesCard() {
   ];
   
   return (
-    <div className="w-full grid lg:grid-cols-3 gap-4 justify-between mt-20">
+    <div className="w-full grid lg:grid-cols-3 gap-4 justify-between mt-5 md:mt-10">
       {services.map((item) => (
         <div
           key={item.id}
@@ -113,7 +113,7 @@ export default function ServicesCard() {
           >
             {item.description}
           </p>
-          <Button className="bg-[#F96261] rounded-xl text-white" size="default">
+          <Button className="bg-mirch-pink rounded-xl text-white" size="default">
             <Link href={item.link}>Read More</Link>
           </Button>
         </div>

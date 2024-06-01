@@ -1,10 +1,10 @@
 import Image from "next/image";
-import canon from "@/public/canon.png";
-import unilever from "@/public/unilever.png";
-import coca from "@/public/coca.png";
-import lenovo from "@/public/lenovo.png";
-import microsoft from "@/public/microsoft.png";
-import amazon from "@/public/amazon.png";
+import canon from "@/public/home/canon.png";
+import unilever from "@/public/home/unilever.png";
+import coca from "@/public/home/coca.png";
+import lenovo from "@/public/home/lenovo.png";
+import microsoft from "@/public/home/microsoft.png";
+import amazon from "@/public/home/amazon.png";
 const companies = [
   {
     name: "Canon",

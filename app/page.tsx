@@ -1,13 +1,13 @@
 import About from "@/components/home/About";
 import Hero from "@/components/home/Home";
 import Services from "@/components/home/Services";
-import Slayer from "@/components/Slayer";
+import Slayer from "@/components/home/Slayer";
 import Incredible from "@/components/home/Incredible";
 import Grow from "@/components/home/Grow";
 import CTA from "@/components/CTA";
 import ConvertToBrands from "@/components/home/ConvertToBrands";
-import Trusted from "@/components/Trusted";
-import Partnership from "@/components/Contact";
+import Trusted from "@/components/home/Trusted";
+import Partnership from "@/components/home/Contact";
 import Expertise from "@/components/home/Expertise";
 import CaseStudies from "@/components/home/CaseStudies";
 import AllServices from "@/components/home/AllServices";
@@ -15,7 +15,7 @@ import FAQ from "@/components/home/FAQ";
 import Testimonial from "@/components/home/Testimonials";
 import Blogs from "@/components/home/Blogs";
 import GetInTouch from "@/components/home/GetInTouch";
-import Newsletter from "@/components/Newsletter";
+import Newsletter from "@/components/home/Newsletter";
 
 export default function Home() {
   return (

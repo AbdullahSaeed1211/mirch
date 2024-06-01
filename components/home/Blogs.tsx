@@ -1,20 +1,17 @@
+import Image from "next/image";
 import {
   Card,
   CardContent,
   CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
-import Link from "next/link";
-import case1 from "@/public/case1.png";
-import case2 from "@/public/case2.png";
-import case3 from "@/public/case3.png";
+import case1 from "@/public/home/case1.png";
+import case2 from "@/public/home/case2.png";
+import case3 from "@/public/home/case3.png";
 export default function Blogs() {
   return (
     <div className="px-[20px] lg:container lg:px-20 mx-auto">
       <div className="my-10">
-        <p className="text-[#F96261] leading-[26px] text-[22px] font-poppins font-semibold">
+        <p className="text-mirch-pink leading-[26px] text-[22px] font-poppins font-semibold">
           Blogs
         </p>
         <div className="flex flex-col lg:flex-row">

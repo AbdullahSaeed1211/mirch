@@ -1,8 +1,8 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import Plus from "@/public/plus.svg";
-import faqImage from "@/public/faqImage.svg";
+import Plus from "@/public/home/plus.svg";
+import faqImage from "@/public/home/faqImage.svg";
 import Image from "next/image";
 
 const items = [
@@ -32,7 +32,7 @@ export default function FAQ() {
   return (
     <div className="flex flex-col w-full px-[20px] lg:container lg:px-20 mx-auto lg:flex-row lg:gap-x-6 mt-10">
       <div className="lg:w-1/3 lg:py-[32px] lg:pr-[56px]">
-        <p className="text-[#F96261] leading-[26px] text-[22px] font-poppins font-semibold">
+        <p className="text-mirch-pink leading-[26px] text-[22px] font-poppins font-semibold">
           Process
         </p>
         <h1 className="text-black font-bold text-[40px] leading-[48px]">
