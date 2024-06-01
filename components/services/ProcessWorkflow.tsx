@@ -1,4 +1,4 @@
-import gadgets from "@/public/services/gadgets.png";
+import gadgets from "@/public/services/GADGETs.png";
 import Image from "next/image";
 export default function ProcessWorkflow() {
   return (
