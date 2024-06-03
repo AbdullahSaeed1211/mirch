@@ -72,6 +72,7 @@ const config = {
         nextproject2: "url('/home/nextproject2.svg')",
         footerCurved: "url('/services/footerCurvedbg.svg')",
         footerCurved2: "url('/servicesfooterCurvedbg.png')",
+        howitworks: "url('/content-marketing/howitworks.svg')",
       },
 
       borderRadius: {
