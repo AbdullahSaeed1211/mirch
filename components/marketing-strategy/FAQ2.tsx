@@ -31,7 +31,7 @@ const items = [
 export default function FAQ2() {
   return (
    
-      <div className="flex flex-col justify-start items-start mt-5 lg:mt-10">
+      <div className="flex flex-col justify-start items-start mt-5 lg:mt-10 w-full">
         <Accordion.Root
           type="single"
           defaultValue="item-1"
