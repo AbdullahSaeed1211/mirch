@@ -65,6 +65,7 @@ const config = {
         Roboto: ["Roboto", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         lato: ["Lato", "sans-serif"],
+        be_vietnam_pro: ["Be Vietnam Pro", "sans-serif"],
       },
       backgroundImage: {
         herobg: "url('/herobg.png')",
@@ -73,6 +74,7 @@ const config = {
         footerCurved: "url('/services/footerCurvedbg.svg')",
         footerCurved2: "url('/servicesfooterCurvedbg.png')",
         howitworks: "url('/content-marketing/howitworks.svg')",
+        marketingbg: "url('/marketing-strategy/marketingbg.svg')",
       },
 
       borderRadius: {
