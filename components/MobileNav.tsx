@@ -41,7 +41,7 @@ return  <Sheet>
             <div className="text-sm font-medium leading-none group-hover:underline text-black">Content Marketing</div>
             <div className="line-clamp-2 text-sm leading-snug text-gray-500">Elevate your brand with our content marketing services</div>
           </Link>
-          <Link className="group grid h-auto w-full justify-start gap-1" href="/marketing-strategies">
+          <Link className="group grid h-auto w-full justify-start gap-1" href="/marketing-strategy">
             <div className="text-sm font-medium leading-none group-hover:underline text-black">Marketing Strategy</div>
             <div className="line-clamp-2 text-sm leading-snug text-gray-500">Discover more about our services.</div>
           </Link>
