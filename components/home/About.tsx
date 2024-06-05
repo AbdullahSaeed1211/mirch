@@ -12,7 +12,7 @@ const items = [
 export default function About() {
   return (
     <>
-      <div className="lg:grid gap-y-2 lg:grid-cols-3 w-full">
+      <div className="lg:grid gap-y-2 lg:grid-cols-3 w-full" id="about">
         <div className="lg:col-span-2">
           <p className="text-mirch-pink font-normal lg:leading-[26px] lg:text-[22px] font-poppins lg:font-semibold">
             Mirch Media

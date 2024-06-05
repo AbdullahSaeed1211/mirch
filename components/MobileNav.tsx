@@ -10,20 +10,20 @@ import Image from "next/image";
 export default function MobileNav() {
 return  <Sheet>
 <SheetTrigger asChild>
-  <Button className="ml-auto " size="icon" variant="outline">
+  <Button className="ml-auto lg:hidden" size="icon" variant="outline">
     <Menu className="h-6 w-6" color="#fefbfb" />
     <span className="sr-only">Toggle navigation menu</span>
   </Button>
 </SheetTrigger>
-<SheetContent side="left" className="bg-white">
+<SheetContent side="top" className="bg-white">
   <Link className="flex items-center gap-2 text-black" href="/">
     <Image src={mirchLogo} alt='mirch logo' />
   </Link>
   <div className="grid gap-4 py-6">
-    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="#">
+    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="/">
       Home
     </Link>
-    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="#">
+    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="/#about">
       About Us
     </Link>
     <Collapsible className="grid gap-4">
