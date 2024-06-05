@@ -11,19 +11,23 @@ import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
 import { MapPin } from "lucide-react";
 import Link from "next/link";
+import Analysis from "./Analysis";
+import Benefit from "@/components/marketing-strategy/Benefit";
+import FAQ2 from "./FAQ2";
+
 
 export default function ServicesList() {
   return (
     <>
       <div className="min-w-7xl mx-[20px] lg:container lg:px-20 mt-10 ">
         <div className="flex">
-          <div className="w-4/5 flex flex-col">
-            <Image src={marketingsm} alt="" height={640} width={960} />
+          <div className="lg:w-4/5 flex flex-col">
+            <Image src={marketingsm} alt="" height={640} width={960} className="hidden lg:block"/>
             <div className="flex flex-col">
               <h1 className="font-be_vietnam_pro font-bold text-[32px] leading-10 text-black ">
                 Marketing Strategy
               </h1>
-              <p className="font-be_vietnam_pro font-normal text-[16px] leading-7 text-[#555555]">
+              <p className="font-be_vietnam_pro font-normal text-[16px] leading-7 text-[#555555] mt-5">
                 Phosfluorescently engage worldwide methodologies with
                 web-enabled technology. Interactively coordinate proactive
                 e-commerce via process-centric {`"`}outside the box{`"`}{" "}
@@ -38,9 +42,13 @@ export default function ServicesList() {
                 without superior collaboration and idea-sharing. Holistically
                 pontificate installed base portals after maintainable products.
               </p>
+              <Analysis />
+              <Benefit />
+              <FAQ2 />
+
             </div>
           </div>
-          <div className="w-1/5 flex flex-col">
+          <div className="w-1/5 hidden lg:flex lg:flex-col">
             <Card className="bg-[#002463] text-white rounded-xl">
               <CardHeader>
                 <CardTitle>Services List</CardTitle>

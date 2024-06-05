@@ -1,6 +1,8 @@
 import Image from "next/image";
 import marketingsm from "@/public/marketing-strategy/marketingsm.svg";
 import ServicesList from "@/components/marketing-strategy/ServicesList";
+import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 export default function page() {
   return (
     <>
@@ -26,6 +28,11 @@ export default function page() {
         </div>
       </div>
       <ServicesList />
+      <div className="min-w-7xl mx-[20px] lg:container lg:px-20 mt-10 ">
+        <CTA />
+      </div>
+      
+      <Footer />
     </>
   );
 }

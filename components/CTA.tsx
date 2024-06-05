@@ -11,10 +11,10 @@ export default function CTA() {
         your next project
       </h1>
       <div className="flex flex-col w-full items-center lg:flex-row justify-evenly  gap-x-10 py-4 md:mt-4">
-        <button className=" rounded-xl p-1 bg-[#303360] text-[8px] leading-[12px] sm:text[16px] sm:leading-6 text-white flex items-center justify-center  transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#303360] ">
+        <div className=" rounded p-1 bg-[#303360] text-[8px] leading-[12px] sm:text[16px] sm:leading-6 text-white flex items-center justify-center  transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#303360] ">
           Contact us
           <ArrowUpRight className="h-2 w-2 md:h-5 md:w-5 ml-1" />
-        </button>
+        </div>
       </div>
     </div>
   );
