@@ -22,24 +22,26 @@ export default function Navbar() {
         </Link>
         <DropdownMenu >
           <DropdownMenuTrigger>
-            <div className="flex items-center font-poppins text-lg font-medium text-[22px] leading-[22px] cursor-pointer hover:text-mirch-pink">
+            <div className="flex items-center font-poppins text-lg font-medium text-[22px] leading-[22px] cursor-pointer">
               Our Services
               <ChevronDown className="ml-2 h-5 w-5" />
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align='end' className="bg-[#000b47] border border-[#000b47]"  forceMount>
+          <DropdownMenuContent align='center' className="bg-[#000b47] border border-[#000b47]"  forceMount>
             <DropdownMenuSeparator />
-            <DropdownMenuItem >
-              <Link href="/services" className="text-white">
+            <DropdownMenuItem asChild  >
+              <Link href="/services" className="text-white ">
                 Services Page
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuSeparator/>
+            <DropdownMenuItem asChild>
               <Link href="/content-marketing" className="text-white">
                 Content Marketing
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem asChild>
               <Link href="/marketing-strategy " className="text-white">
                 Marketing Strategy
               </Link>
@@ -52,7 +54,7 @@ export default function Navbar() {
           Mirch TV
         </Link>
       </nav>
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden lg:flex items-center space-x-4">
         <Link href="/contact" className="px-4 py-2 bg-mirch-pink text-white font-semibold rounded hover:bg-mirch-pink/90">
           Contact Us
         </Link>

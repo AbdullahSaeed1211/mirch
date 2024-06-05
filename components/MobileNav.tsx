@@ -15,7 +15,7 @@ return  <Sheet>
     <span className="sr-only">Toggle navigation menu</span>
   </Button>
 </SheetTrigger>
-<SheetContent side="top" className="bg-white">
+<SheetContent side="left" className="bg-white">
   <Link className="flex items-center gap-2 text-black" href="/">
     <Image src={mirchLogo} alt='mirch logo' />
   </Link>
@@ -54,6 +54,7 @@ return  <Sheet>
     <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="#">
       Contact
     </Link>
+    
   </div>
 </SheetContent>
 </Sheet>
