@@ -12,7 +12,7 @@ export default function Benefit() {
   return (
     <>
       <div className="flex flex-col items-center justify-center lg:flex-row lg:items-start lg:justify-between gap-x-4 mt-10">
-        <div className="lg:w-2/5 h-full">
+        <div className="lg:w-2/5 h-full w-full">
           <Card className="bg-[#303360] rounded-xl px-4 py-6 h-full flex lg:justify-start items-center">
             <CardContent>
               <div className="flex flex-col gap-y-4 ">

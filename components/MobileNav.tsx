@@ -51,7 +51,7 @@ return  <Sheet>
     <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="#">
       TV
     </Link>
-    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="#">
+    <Link className="flex w-full items-center py-2 text-lg font-semibold text-black" href="/contact">
       Contact
     </Link>
     

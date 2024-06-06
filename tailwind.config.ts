@@ -66,6 +66,7 @@ const config = {
         montserrat: ["Montserrat", "sans-serif"],
         lato: ["Lato", "sans-serif"],
         be_vietnam_pro: ["Be Vietnam Pro", "sans-serif"],
+        open_sans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
         herobg: "url('/herobg.png')",
@@ -75,6 +76,7 @@ const config = {
         footerCurved2: "url('/servicesfooterCurvedbg.png')",
         howitworks: "url('/content-marketing/howitworks.svg')",
         marketingbg: "url('/marketing-strategy/marketingbg.svg')",
+        contactbg: "url('/contact/contactbg.svg')",
       },
 
       borderRadius: {
