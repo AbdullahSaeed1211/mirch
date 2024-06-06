@@ -77,6 +77,7 @@ const config = {
         howitworks: "url('/content-marketing/howitworks.svg')",
         marketingbg: "url('/marketing-strategy/marketingbg.svg')",
         contactbg: "url('/contact/contactbg.svg')",
+        mapC: "url('/contact/mapC.png')",
       },
 
       borderRadius: {

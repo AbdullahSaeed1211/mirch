@@ -1,6 +1,10 @@
 import Image from "next/image";
 import contacthero from "@/public/contact/contacthero.svg";
 import Questions from "@/components/contact/Questions";
+import { ContactForm } from "./ContactForm";
+import contactC from "@/public/contact/contactC.svg";
+import mapC from "@/public/contact/mapC.png";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
@@ -19,6 +23,18 @@ export default function Page() {
         </div>
       </div>
       <Questions />
+      <div className="flex gap-x-2 w-full items-center justify-center">
+        <div className="lg:w-2/5 hidden lg:block">
+          <Image src={contactC} alt="" />
+        </div>
+        <div className="lg:w-3/5 bg-[#f2f2f1] w-full px-10  mt-5 md:mt-10">
+          <ContactForm />
+        </div>
+      </div>
+     < div className="flex items-center justify-center mt-5 md:mt-10">
+      <Image src={mapC} alt='' className="h-fit bg-cover bg-norepeat"/>
+      </div>
+      <Footer />
     </>
   );
 }
